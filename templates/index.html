@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+
+<body>
+  <section class="section has-text-centered">
+    <figure class="image container is-128x128 mb-4">
+      <img class="is-rounded"
+        src="https://media-exp1.licdn.com/dms/image/C4E03AQH-OLqpaoIILg/profile-displayphoto-shrink_200_200/0/1618237599762?e=1625097600&v=beta&t=RbZ34U20LSg55soBrwFoic3dCxG65HzYSLTOoKUChZg" />
+    </figure>
+    <p class="title is-4">Robin Kamo</p>
+    <p class="subtitle is-6">Jag är dagens utbildare.</p>
+    <a class="button is-info is-outlined is-rounded" href="https://www.linkedin.com/in/robin-kamo-b647ab151/">Contact</a>
+    <a class="button is-danger is-outlined is-rounded" href="https://www.youtube.com/channel/UC4wnv7PuvdMimqPajCCO-Nw">Youtube</a>
+  </section>
+  <section class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth has-background-light">
+      <div class="columns is-gapless">
+        <div class="column is=half">
+          <div class="card m-3">
+            <div class="card-content has-background-danger-light">
+              <h1 class="title">About</h1>
+              <p>{{profile.about}}</p>
+            </div>
+          </div>
+          <div class="card m-3 has-background-primary-light">
+            <div class="card-content">
+              <h1 class="title">Intressets</h1>
+              <p>{{profile.intrests}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is=half">
+          <div class="card m-3 has-background-warning-light">
+            <div class="card-content">
+              <h1 class="title">Experiance</h1>
+              <p>{{profile.experience}}</p>
+            </div>
+          </div>
+          <div class="card m-3 has-background-link-light">
+            <div class="card-content">
+              <h1 class="title">Education</h1>
+              <p>{{profile.education}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
