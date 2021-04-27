@@ -2,6 +2,8 @@
 FROM python:3.8-slim-buster
 
 EXPOSE 5000
+EXPOSE 80
+EXPOSE 443
 
 # Install pip requirements
 COPY requirements.txt .
