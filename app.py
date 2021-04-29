@@ -16,4 +16,3 @@ def home():
         'education':shProfile.acell('B4').value,
     }
     return render_template('index.html', profile=profile)
-
